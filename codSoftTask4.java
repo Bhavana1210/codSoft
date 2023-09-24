@@ -55,13 +55,13 @@ class ATM {
     }
 
     public void run() {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int choice;
 
         do {
             displayMenu();
             System.out.print("Enter your choice: ");
-            choice = scanner.nextInt();
+            choice = sc.nextInt();
 
             switch (choice) {
                 case 1:
@@ -69,12 +69,12 @@ class ATM {
                     break;
                 case 2:
                     System.out.print("Enter deposit amount: ");
-                    double depositAmount = scanner.nextDouble();
+                    double depositAmount = sc.nextDouble();
                     userAccount.deposit(depositAmount);
                     break;
                 case 3:
                     System.out.print("Enter withdrawal amount: ");
-                    double withdrawAmount = scanner.nextDouble();
+                    double withdrawAmount = sc.nextDouble();
                     userAccount.withdraw(withdrawAmount);
                     break;
                 case 4:
