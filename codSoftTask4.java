@@ -85,7 +85,5 @@ class ATM {
                     break;
             }
         } while (choice != 4);
-
-        scanner.close();
     }
 }
